@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iconfont</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .box{
+            width:500px;
+            height:500px;
+        }
+        .info{
+            display:inline;
+        }
+        .headportrait{
+            width:50px;
+            height:50px;
+            border-radius:50px;
+        }
+         main::after {
+            content:'';
+            display: block;
+            clear:both
+         }
+
+        .text{
+            font-size: 12px;
+            text-overflow:ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 14;
+            -webkit-box-orient: vertical;
+
+        }
+        .scenery{
+            float:right;
+            width:200px;
+            height:200px;
+            margin:30px;
+        }
+        ul>li{
+            list-style:none;
+            display:inline-block;
+        }
+        footer{
+            margin-left:-40px;
+            margin-top:-20px;
+        }
+        .write{
+            color:red;
+            border:1px solid red;
+            font-size:12px;
+
+        }
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_381700_r97vrdfq52qsq0k9.ttf') format('truetype')
+        }
+        .eye:before { font-family:"iconfont";content: "\e613";}
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_381700_7sapskmanu2nvcxr.ttf') format('truetype')
+        }
+        .message:before { font-family:"iconfont";content: "\e62b"; }
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_381700_xn6bd1zq78vkj4i.ttf') format('truetype')
+        }
+        .like:before { font-family:"iconfont";content: "\e64b"; }
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_381700_7sapskmanu2nvcxr.ttf') format('truetype')
+        }
+        .dollor:before { font-family:"iconfont";content: "\e63e"; }
+        li,span.icon{
+            color:#cacaca;
+            font-size:12px;
+        }
+        span.icon{
+            margin-right:5px;
+        }
+        ul li{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header class="head">
+            <div class="info">
+                <img class="headportrait" src="https://jirengu.com/data/upload/2017/0118/17/587f39fba695a.png" alt="用户头像">
+            </div>
+            <div class="info">乐之读</div>
+            <div class="info">昨天：22：48</div>
+        </header>
+        <main>
+            <h2>
+                粤桂黔依托高铁经济带 打造“4小时经济生活圈”
+            </h2>
+            <img class="scenery" src="http://n.sinaimg.cn/news/transform/20161019/22eV-fxwvxzf6954523.jpg" alt="图片">
+
+            <div class="text">
+                据新华社电 记者从日前召开的第三届粤桂黔高铁经济带合作联席会议上了解到,
+                粤桂黔三省区自2014年底实现高铁互通以来,务实推进泛珠三角区域合作、珠江-西江经济带建设,
+                以贵广、南广高铁为纽带,以打造国家级粤桂黔高铁经济带合作试验区为目标,推进区域合作与发展,
+                为三地产业、金融、科技、农业、文旅等领域的合作创造了新的机遇,粤桂黔“4小时经济生活圈”逐步形成。
+                据新华社电 记者从日前召开的第三届粤桂黔高铁经济带合作联席会议上了解到,
+                粤桂黔三省区自2014年底实现高铁互通以来,务实推进泛珠三角区域合作、珠江-西江经济带建设,
+                以贵广、南广高铁为纽带,以打造国家级粤桂黔高铁经济带合作试验区为目标,推进区域合作与发展,
+                为三地产业、金融、科技、农业、文旅等领域的合作创造了新的机遇,粤桂黔“4小时经济生活圈”逐步形成。
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li class="write">谈写作</li>
+                <li><span class="eye icon"></span>1656</li>
+                <li><span class="message icon"></span>59</li>
+                <li><span class="like icon"></span>111</li>
+                <li><span class="dollor icon"></span>3</li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>

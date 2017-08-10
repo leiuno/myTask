@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .header{
+            width:600px;
+            margin:0 auto;
+        }
+        .tab{
+            list-style:none;
+            background-color: #f1f1f1;
+            margin:0;
+            padding:0;
+            text-decoration:none;
+            box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        .tab:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .btn{
+            float:left;
+            background-color:#f1f1f1;
+            position:relative;
+        }
+        .btn a{
+            text-decoration:none;
+            color:black;
+            padding: 8px 16px;
+            display: block;
+
+        }
+        .btn a:hover{
+            background-color:#ccc;
+        }
+        .dropdown{
+            position:relative;
+            block:inline-block;
+
+        }
+        .dropdown-content{
+            background:#fff;
+            width:150px;
+            position:absolute;
+            display:none;
+            box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-content a:hover{
+            background-color:#ccc;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <ul class="tab">
+        <li class="btn">
+            <a href="#">首页</a>
+        </li>
+        <li class="btn">
+            <a href="#">作品</a>
+        </li>
+        <li class="btn dropdown">
+            <a href="#">更多</a>
+            <div class="dropdown-content">
+                <a href="#">GitHub</a>
+                <a href="#">博客</a>
+                <a href="#">知乎</a>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
