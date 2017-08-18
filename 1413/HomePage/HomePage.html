@@ -4,63 +4,58 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
     <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_381700_q6upe6rueu1y8pvi.css">
 
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <div class="menu1">
+        <div class="navbar layout clearfix">
+            <div class="logo">
                 <a href="#">Start Project</a>
             </div>
-            <ul class="menu2">
+            <ul class="nav clearfix">
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">PROTFOLIO</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">TEAM</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-        </nav>
-
-        <div class="text">
-            <div class="welcome">Welcome To Our Studio!</div>
-            <div class="nice">IT'S NICE TO MEET YOU</div>
-            <div class="tell">
-                <a href="#">TELL ME MORE</a>
-            </div>
+        </div>
+        <div class="head-text layout">
+            <h1>Welcome To Our Studio!</h1>
+            <h2>IT'S NICE TO MEET YOU</h2>
+            <a class="button" href="#">TELL ME MORE</a>
         </div>
     </header>
     <main>
-        <section class="service">
-            <div>
-                <h2>service</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur</h3>
+        <section class="service layout">
+            <div class="con-title">
+                <h2>services</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
-            <div class="container">
-                <div>
-                    <span class="icon icon_1">
-                        <i class="circle"></i>
-                        <i class="icon_small shopping_cart"></i>
-                    </span>
+            <div class="container clearfix">
+                <div class="intro">
+                    <div class="icon-circle">
+                        <div class="icon icon-cart"></div>
+                    </div>
                     <h4>E-Commerce</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     </p>
                 </div>
-                <div>
-                    <span class="icon icon_2">
-                        <i class="circle"></i>
-                        <i class="icon_small computer"></i>
-                    </span>
+                <div class="intro">
+                    <div class="icon-circle">
+                        <div class="icon icon-computer"></div>
+                    </div>
                     <h4>Responsive Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     </p>
                 </div>
-                <div>
-                    <span class="icon icon_3">
-                        <i class="circle"></i>
-                        <i class="icon_small security"></i>
-                    </span>
+                <div class="intro">
+                    <div class="icon-circle">
+                        <div class="icon icon-security"></div>
+                    </div>
                     <h4>Web Security</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
@@ -68,122 +63,221 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
-            <div>
-                <h2>PORTFOLIO</h2>
+        <section class="portfolio layout">
+            <div class="con-title">
+                <h2>Portfolio</h2>
                 <h3>Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
-            <ul class="container">
+            <ul class="container clearfix">
                 <li>
-                    <img src="./image/roundicons.png" alt="">
+                    <a href="#"><img src="./image/roundicons.png" alt=""></a>
                     <div>
                         <h4>Round Icons</h4>
                         <p>Graphic Design</p>
                     </div>
                 </li>
                 <li>
-                    <img src="./image/startup-framework.png" alt="">
+                    <a href="#"><img src="./image/startup-framework.png" alt=""></a>
                     <div>
                         <h4>Startup Framework</h4>
                         <p>Website Design</p>
                     </div>
                 </li>
-                <li><img src="./image/treehouse.png" alt="">
+                <li>
+                    <a href="#"><img src="./image/treehouse.png" alt=""></a>
                     <div>
                         <h4 >Treehouses</h4>
                         <p>Website Design</p>
                     </div>
                 </li>
-                <li><img src="./image/golden.png" alt="">
+                <li>
+                    <a href="#"><img src="./image/golden.png" alt=""></a>
                     <div>
                         <h4>Golden</h4>
                         <p>Website Design</p>
                     </div>
                 </li>
-                <li><img src="./image/escape.png" alt="">
+                <li>
+                    <a href="#"><img src="./image/escape.png" alt=""></a>
                     <div>
                         <h4>Escape</h4>
                         <p>Website Design</p>
                     </div>
                 </li>
-                <li><img src="./image/dreams.png" alt="">
+                <li>
+                    <a href="#"><img src="./image/dreams.png" alt=""></a>
                     <div>
                         <h4>Dreams</h4>
                         <p>Website Design</p>
                     </div>
                 </li>
             </ul>
-
         </section>
-        <section class="about">
-            <div>
+        <section class="about layout">
+            <div class="con-title">
                 <h2>ABOUT</h2>
                 <h3>Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
             <ul class="container">
-                <li>
-                    <div>
+                <li class="time-left">
+                    <div class="clearfix">
                         <img src="./image/1.jpg" alt="">
                     </div>
-                    <div>
-                        <div>2009-2011</div>
-                        <div>Our Humble Beginnings</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+                    <div class="text-left">
+                        <div class="text-title1">2009-2011</div>
+                        <div class="text-title2">Our Humble Beginnings</div>
+                        <div class="text-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
                             totam reiciendis temporibus qui quibusdam,
                             recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div>
+                <li class="time-right">
+                    <div class="clearfix">
                         <img src="./image/2.jpg" alt="">
                     </div>
-                    <div>
-                        <div>MARCH 2011</div>
-                        <div>An Agency is Born</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <div class="text-right">
+                        <div class="text-title1">MARCH 2011</div>
+                        <div class="text-title2">An Agency is Born</div>
+                        <div class="text-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
                             recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div>
+                <li class="time-left">
+                    <div class="clearfix">
                         <img src="./image/3.jpg" alt="">
                     </div>
-                    <div>
-                        <div>DECEMBER 2012</div>
-                        <div>Transition to Full Service</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <div class="text-left";>
+                        <div class="text-title1">DECEMBER 2012</div>
+                        <div class="text-title2">Transition to Full Service</div>
+                        <div class="text-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
                             recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div>
+                <li class="time-right">
+                    <div class="clearfix">
                         <img src="./image/4.jpg" alt="">
                     </div>
-                    <div>
-                        <div>JULY 2014</div>
-                        <div>Phase Two Expansion</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <div class="text-right">
+                        <div class="text-title1">JULY 2014</div>
+                        <div class="text-title2">Phase Two Expansion</div>
+                        <div class="text-pro">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
                             recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
                         </div>
                     </div>
                 </li>
-                <li>
-                    
+                <li class="last-ball">
+                    <span class="text-bottom">BE PART <br> OF OUR <br> STORY!</span>
                 </li>
             </ul>
         </section>
-        <div></div>
-        <div></div>
-        <div></div>
+        <section class="team">
+            <div class="con-title">
+                <h2>OUR AMAZING TEAM</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div>
+                <div class="container clearfix layout">
+                    <div class="family">
+                        <img src="./image/5.jpg" alt="">
+                        <h4>Kay Garland</h4>
+                        <p>Lead Designer</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <img src="./image/6.jpg" alt="">
+                        <h4>Larry Parker</h4>
+                        <p>Lead Marketer</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-circle"></i>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <img src="./image/7.jpg" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p>Lead Developer</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="team-text">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Aut eaque,
+                    laboriosam veritatis, quos non quis ad perspiciatis,
+                    totam corporis ea, alias ut unde.
+                </p>
+            </div>
+        </section>
+        <aside>
+            <div class="dif-logo">
+                <a href="#"><img src="./image/envato.jpg" alt=""></a>
+            </div>
+            <div class="dif-logo">
+                <a href="#"><img src="./image/designmodo.jpg" alt=""></a>
+            </div>
+            <div class="dif-logo">
+                <a href="#"><img src="./image/themeforest.jpg" alt=""></a>
+            </div>
+            <div class="dif-logo">
+                <a href="#"><img src="./image/creative-market.jpg" alt=""></a>
+            </div>
+        </aside>
+        <section class="contact layout">
+            <div class="con-title">
+                <h2>CONTACT US</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="clearfix">
+                <div class="container">
+                    <div class="infomation">
+                        <div><input type="text" placeholder="YOUR NAME*"></div>
+                        <div><input type="text" placeholder="YOUR EMAIL*"></div>
+                        <div><input type="text" placeholder="YOUR PHONE*"></div>
+                    </div>
+                </div>
+                <div class="text-area container">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE*"></textarea>
+                </div>
+            </div>
+            <div class="submit">
+                <a class="button" href="#">SEND MESSAGE</a>
+            </div>
+        </section>
     </main>
-    <footer>
-        
+    <footer class="footer clearfix layout">
+        <div class="foot">Copyright © Your Website 2014</div>
+        <ul class="foot clearfix">
+            <li><a href="#" class="icon icon-bird"></a></li>
+            <li><a href="#" class="icon icon-f"></a></li>
+            <li><a href="#" class="icon icon-in"></a></li>
+        </ul>
+        <div class="foot">
+            <div class="footer-text"><a href="#">Privacy Policy</a></div>
+            <div class="footer-text"><a href="#">Terms of Use</a></div>
+        </div>
+
     </footer>
 </body>
 </html>
