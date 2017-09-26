@@ -1,0 +1,70 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*common css*/
+ul{
+    list-style: none;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cover{
+    background-color:#cacaca;
+    content: "";
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.musicbox{
+    width: 340px;
+    height: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -115px;
+    font-family: cursive;
+    color: #f06d6a;
+}
+.musicbox .music-panel{
+    border: 1px solid #76dba3;
+    padding: 20px 20px 5px 20px;
+    background-color: #FFF;
+}
+.music .control{
+    margin-top: 20px;
+    font-size: 22px;
+    float: left;
+}
+.icon{
+    font-family: iconfont;
+    cursor: pointer;
+}
+.music .info{
+    margin-left: 120px;
+}
+.info .title{
+    font-size:18px;
+}
+.progress{
+    width: 280px;
+}
+.progress .bar{
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.bar .bar-now{
+    background-color: #f06d6a;
+    height: 3px;
+    width: 50%;
+}
+.progress .time{
+    text-align: right;
+}

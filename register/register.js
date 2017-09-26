@@ -4,36 +4,27 @@
 var $ = document.querySelector.bind(document)
 var $$ = document.querySelectorAll.bind(document)
 
-var headerLogin = $('.header-login')
-headerLogin.addEventListener('click',function(e){
-    $('.modal-login').style.display = 'block'
-    //$$('.modal').forEach(function(element){
-        //element.style.display = "block"
-    //})
-    e.preventDefault()
-})
-
-var close = $$('.close')
-/*close[0].addEventListener('click',function(e){
-    $$('.modal').forEach(function(element){
-        element.style.display = "none"
-    })
-    e.preventDefault()
-})*/
-close[1].addEventListener('click',function(e){
-    $$('.modal').forEach(function(element){
-        element.style.display = "none"
-    })
+$('.header-login').addEventListener('click',function(e){
+    e.stopPropagation()
+    $('.flip-modal').style.display = 'block'
     e.preventDefault()
 })
 
 $('.flip-modal').addEventListener('click',function(e){
-    if(e.target.classList.contains('.login')){
-        $('.flip-modal').classListremove('.register')
-        $('.flip-modal').classListadd('.login')
+    e.stopPropagation()
+    if(e.target.classList.contains('login')){
+        $('.flip-modal').classList.remove('register')
+        $('.flip-modal').classList.add('login')
     }
-    if(e.target.classList.contains('.register')){
-        $('.flip-modal').classListremove('.login')
-        $('.flip-modal').classListadd('.register')
+    if(e.target.classList.contains('register')){
+        $('.flip-modal').classList.add('register')
+        $('.flip-modal').classList.remove('login')
     }
+    if(e.target.classList.contains('close')){
+        $('.flip-modal').style.display = 'none'
+    }
+    e.preventDefault()
+})
+document.addEventListener('click',function(){
+    $('.flip-modal').style.display = 'none'
 })

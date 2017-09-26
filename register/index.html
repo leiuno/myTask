@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container,#box1,#box2,#hi{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #cacaca;
+            margin: 50px;
+        }
+
+        #box1{
+            width: 200px;
+            height: 200px;
+        }
+
+        #box2{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    container
+    <div id="box1">
+        box1
+        <div id="box2">
+            box2
+        </div>
+    </div>
+</div>
+
+<div id="hi">
+    hi
+</div>
+
+<script>
+
+    var age = 27
+    var obj = {
+        name: "zhangsan",
+        age: age
+    }
+
+    var value;
+
+    value = {
+        value: "hello world"
+    }
+
+    value = {
+        expire: [111, 222],
+        value: "hello world"
+    }
+
+
+    var log = console.log.bind(console)
+    var Storage = {
+
+        set: function (key, value, expire) {
+            value = {
+                value: value
+            }
+            if(expire > 0){
+                value.expire = [Date.now(), expire*1000]
+            }
+            localStorage.setItem(key, JSON.stringify(value))
+        },
+        
+        get: function (key) {
+            var value = JSON.parse(localStorage.getItem(key))
+            var expireData;
+
+            if(value && value.expire) {
+
+            }
+            if(value && "expire" in value) {
+                expireData = value.expire;
+                if(Date.now() - expireData[0] > expireData[1]) {
+                    localStorage.removeItem(key)
+                    return null;
+                }
+            }
+            return value.value;
+        }
+    }
+
+
+    Storage.set('name', '饥人谷')
+    Storage.set('age', 2, 8) ;  //设置 name 字段存储的值为'饥人谷'
+    Storage.set('teachers', ['ruoyu', 'fangfang', 'tom'],  60)
+    Storage.set("scores", [{"name": "zhangsan", "score": 4}, {"name": "lisi", "score": 2.5}])
+
+    //log(Storage.get('name'))   // ‘饥人谷’
+    //log(Storage.get('age'))     //  如果不超过30秒，返回数字类型的2；如果超过30秒，返回 undefined，并且 localStorage 里清除 age 字段
+    //log(Storage.get('teachers'))  //如果不超过60秒，返回数组； 如果超过60秒，返回undefined
+    //log(Storage.get('scores'))
+
+
+</script>
+</body>
+</html>

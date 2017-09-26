@@ -22,7 +22,12 @@ a{
     position: relative;
 }
 main{
-    background-color: #ccc;
+    background: linear-gradient(to right top,rgba(38,50,105,0.78),rgba(255,152,0,0.45)),
+    url(./image/screen.jpg) center center no-repeat;
+    background-size: cover;
+}
+.flip-modal{
+    display:none;
 }
 .modal{
     width: 400px;
@@ -32,13 +37,12 @@ main{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    display:none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
 
-}
-/*.flip-modal{
-    display:block;
-}
-*/
 .nav{
     text-align: center;
     margin-bottom: 10px;
